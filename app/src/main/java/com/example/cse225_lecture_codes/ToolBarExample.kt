@@ -17,7 +17,7 @@ class ToolBarExample : AppCompatActivity() {
         toolbar.setLogo(R.drawable.logo_toolbar)
         setSupportActionBar(toolbar)
         toolbar.setNavigationOnClickListener{
-            Toast.makeText(this,"Back Arrow",Toast.LENGTH_LONG).show()
+            Toast.makeText(this,"Back Arrow",Toast.LENGTH_SHORT).show()
 
         }
     }
@@ -30,15 +30,15 @@ class ToolBarExample : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         val id:Int=item.itemId
         if(id==R.id.action_settings){
-            Toast.makeText(applicationContext,"Settings Menu",Toast.LENGTH_LONG).show()
+            Toast.makeText(applicationContext,"Settings Menu",Toast.LENGTH_SHORT).show()
             return true
         }
         else if(id==R.id.action_email){
-            Toast.makeText(applicationContext,"Email",Toast.LENGTH_LONG).show()
+            Toast.makeText(applicationContext,"Email",Toast.LENGTH_SHORT).show()
             return true
         }
         else if(id==R.id.action_add){
-            Toast.makeText(applicationContext,"Add",Toast.LENGTH_LONG).show()
+            Toast.makeText(applicationContext,"Add",Toast.LENGTH_SHORT).show()
             return true
         }
         return super.onOptionsItemSelected(item)
