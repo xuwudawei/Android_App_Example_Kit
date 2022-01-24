@@ -3,7 +3,8 @@
     package="com.example.cse225_lecture_codes">
 
     <uses-permission android:name="android.permission.VIBRATE" />
-    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -12,9 +13,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CSE225_Lecture_Codes">
         <activity
-            android:name=".ToolBarExample"
-            android:theme="@style/Theme.CSE225_Lecture_Codes.NoActionBar"
+            android:name=".ProgressBarExample"
             android:exported="false" />
+        <activity
+            android:name=".MainActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".ToolBarExampleTwo"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".ToolBarExample"
+            android:exported="false"
+            android:theme="@style/Theme.CSE225_Lecture_Codes.NoActionBar" />
         <activity
             android:name=".RatingBarExampleAverage"
             android:exported="false" />
@@ -31,9 +42,8 @@
             android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".ToolBarExampleTwo"
-            android:exported="true"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            android:name=".EditTextProgress"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
