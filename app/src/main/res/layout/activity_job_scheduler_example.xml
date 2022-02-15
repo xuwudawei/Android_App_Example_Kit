@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JobSchedulerExample">
+
+    <Button
+        android:id="@+id/startJob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:text="Start Job"
+
+        tools:layout_editor_absoluteX="69dp"
+        tools:layout_editor_absoluteY="259dp" />
+
+    <Button
+        android:id="@+id/stopJob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop Job"
+
+        android:layout_below="@id/startJob"
+        android:layout_centerInParent="true"
+        tools:layout_editor_absoluteX="246dp"
+        tools:layout_editor_absoluteY="259dp" />
+</RelativeLayout>

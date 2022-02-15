@@ -23,7 +23,6 @@ class RatingBarExample : AppCompatActivity() {
 
         simpleRating.onRatingBarChangeListener=RatingBar.OnRatingBarChangeListener{
             ratingBar:RatingBar?,rating:Float,fromUser:Boolean->Toast.makeText(this,"Rating: $rating  $fromUser",Toast.LENGTH_SHORT).show()
-
         }
 
     }

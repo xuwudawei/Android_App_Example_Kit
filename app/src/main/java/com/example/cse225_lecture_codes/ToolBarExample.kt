@@ -30,15 +30,15 @@ class ToolBarExample : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         val id:Int=item.itemId
         if(id==R.id.action_settings){
-            Toast.makeText(applicationContext,"Settings Menu",Toast.LENGTH_SHORT).show()
+            Toast.makeText(applicationContext,"Settings",Toast.LENGTH_SHORT).show()
             return true
         }
         else if(id==R.id.action_email){
-            Toast.makeText(applicationContext,"Email",Toast.LENGTH_SHORT).show()
+            Toast.makeText(applicationContext,"Logout",Toast.LENGTH_SHORT).show()
             return true
         }
         else if(id==R.id.action_add){
-            Toast.makeText(applicationContext,"Add",Toast.LENGTH_SHORT).show()
+            Toast.makeText(applicationContext,"More...",Toast.LENGTH_SHORT).show()
             return true
         }
         return super.onOptionsItemSelected(item)

@@ -12,13 +12,27 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CSE225_Lecture_Codes">
-
+        <activity
+            android:name=".NotificationViewExample"
+            android:exported="false" />
         <activity
             android:name=".CustomToastExample"
-            android:exported="true">
-
-        </activity>
-
+            android:exported="false" />
+        <activity
+            android:name=".NotificationManagerExample"
+            android:exported="false" />
+        <activity
+            android:name=".AlarmManagerExample"
+            android:exported="false" />
+        <activity
+            android:name=".bottomNavBarExample"
+            android:exported="false" />
+        <activity
+            android:name=".MediaPlayerExample"
+            android:exported="false" />
+        <activity
+            android:name=".JobSchedulerExample"
+            android:exported="true" />
         <activity
             android:name=".EditTextProgress"
             android:exported="false" />
@@ -52,7 +66,7 @@
             android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".MediaPlayerExample"
+            android:name=".DateTimePickerExample"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -61,6 +75,12 @@
             </intent-filter>
         </activity>
 
+        <receiver android:name=".AlarmManagerBroadcast" />
+
+        <service
+            android:name=".MyJobService"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
     </application>
 
 </manifest>
